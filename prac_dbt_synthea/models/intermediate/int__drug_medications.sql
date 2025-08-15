@@ -33,14 +33,14 @@ FROM {{ ref ('stg_synthea__medications') }} AS m
 INNER JOIN {{ ref ('int__source_to_standard_vocab_map') }} AS srctostdvm
     ON
         m.medication_code = srctostdvm.source_code
-        AND srctostdvm.target_domain_id = 'Drug'
-        AND srctostdvm.target_vocabulary_id = 'RxNorm'
-        AND srctostdvm.target_standard_concept = 'S'
+        AND srctostdvm.target_domain_id = 'drug'
+        AND srctostdvm.target_vocabulary_id = 'rxnorm'
+        AND srctostdvm.target_standard_concept = 's'
         AND srctostdvm.target_invalid_reason IS null
 INNER JOIN {{ ref ('int__source_to_source_vocab_map') }} AS srctosrcvm
     ON
         m.medication_code = srctosrcvm.source_code
-        AND srctosrcvm.source_vocabulary_id = 'RxNorm'
+        AND srctosrcvm.source_vocabulary_id = 'rxnorm'
 INNER JOIN {{ ref ('int__person') }} AS p
     ON m.patient_id = p.person_source_value
 LEFT JOIN {{ ref ('int__visit_detail') }} AS vd
