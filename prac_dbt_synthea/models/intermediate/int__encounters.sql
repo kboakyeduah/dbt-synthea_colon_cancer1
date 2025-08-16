@@ -30,7 +30,7 @@ FROM {{ ref( 'stg_synthea__encounters') }} AS e
 LEFT JOIN cte_dupes
     ON e.encounter_id = cte_dupes.dupe_encounter_id
 INNER JOIN {{ ref ('int__person') }} AS p
-    ON e.patient_id = p.person_source_value
+    ON e.patient_id = p.person_source_value::UUID
 LEFT JOIN {{ ref ('int__provider') }} AS pr
     ON e.provider_id = pr.provider_source_value
 WHERE cte_dupes.dupe_encounter_id IS NULL

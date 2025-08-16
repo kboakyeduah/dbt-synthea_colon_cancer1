@@ -1,0 +1,894 @@
+2025-08-16 21:58:52	[Main thread]	INFO	Achilles	achilles	CDM Version 5.4 passed as parameter.
+2025-08-16 21:58:52	[Main thread]	INFO	Achilles	achilles	Beginning single-threaded execution
+2025-08-16 21:58:52	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:58:53	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0549 secs
+2025-08-16 21:58:53	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.0834 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Executing multiple queries. This could take a while
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 0 (Source name) -- START
+2025-08-16 21:59:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0426 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 0 (0.052478 secs)
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 1 (Number of persons) -- START
+2025-08-16 21:59:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0442 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1 (0.047454 secs)
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 2 (Number of persons by gender) -- START
+2025-08-16 21:59:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0185 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 2 (0.021907 secs)
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 3 (Number of persons by year of birth) -- START
+2025-08-16 21:59:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0231 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 3 (0.027074 secs)
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 4 (Number of persons by race) -- START
+2025-08-16 21:59:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0214 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 4 (0.025481 secs)
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 5 (Number of persons by ethnicity) -- START
+2025-08-16 21:59:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0205 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 5 (0.024185 secs)
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 10 (Number of all persons by year of birth by gender) -- START
+2025-08-16 21:59:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0212 secs
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 10 (0.024670 secs)
+2025-08-16 21:59:01	[Main thread]	INFO	Achilles	achilles	Analysis 11 (Number of non-deceased persons by year of birth by gender) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 11 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 474 An error report has been created at  output/achillesError_11.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 12 (Number of persons by race and ethnicity) -- START
+2025-08-16 21:59:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0207 secs
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 12 (0.024170 secs)
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 101 (Number of persons by age, with age at first observation period) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 101 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 395 An error report has been created at  output/achillesError_101.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 102 (Number of persons by gender by age, with age at first observation period) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 102 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 434 An error report has been created at  output/achillesError_102.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 103 (Distribution of age at first observation period) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 103 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 306 An error report has been created at  output/achillesError_103.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 104 (Distribution of age at first observation period by gender) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 104 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 316 An error report has been created at  output/achillesError_104.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 105 (Length of observation (days) of first observation period) -- START
+2025-08-16 21:59:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.114 secs
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 105 (0.122845 secs)
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 106 (Length of observation (days) of first observation period by gender) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 106 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: character varying = bigint   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 444 An error report has been created at  output/achillesError_106.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 107 (Length of observation (days) of first observation period by age decile) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 107 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: character varying = bigint   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 641 An error report has been created at  output/achillesError_107.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 108 (Number of persons by length of observation period, in 30d increments) -- START
+2025-08-16 21:59:02	[Main thread]	ERROR	Achilles	3	Analysis 108 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 578 An error report has been created at  output/achillesError_108.txt 
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 109 (Number of persons with continuous observation in each year) -- START
+2025-08-16 21:59:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.14 secs
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 109 (0.143311 secs)
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 110 (Number of persons with continuous observation in each month) -- START
+2025-08-16 21:59:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0878 secs
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 110 (0.090818 secs)
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 111 (Number of persons by observation period start month) -- START
+2025-08-16 21:59:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0213 secs
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 111 (0.024391 secs)
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 112 (Number of persons by observation period end month) -- START
+2025-08-16 21:59:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0224 secs
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 112 (0.025555 secs)
+2025-08-16 21:59:02	[Main thread]	INFO	Achilles	achilles	Analysis 113 (Number of persons by number of observation periods) -- START
+2025-08-16 21:59:03	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0193 secs
+2025-08-16 21:59:03	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 113 (0.022321 secs)
+2025-08-16 21:59:03	[Main thread]	INFO	Achilles	achilles	Analysis 116 (Number of persons with at least one day of observation in each year by gender and age decile) -- START
+2025-08-16 21:59:03	[Main thread]	ERROR	Achilles	3	Analysis 116 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 378 An error report has been created at  output/achillesError_116.txt 
+2025-08-16 21:59:03	[Main thread]	INFO	Achilles	achilles	Analysis 117 (Number of persons with at least one day of observation in each month) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 3.42 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 117 (3.426866 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 119 (Number of observation period records by period_type_concept_id) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0171 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 119 (0.020069 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 200 (Number of persons with at least one visit occurrence, by visit_concept_id) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0399 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 200 (0.043005 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 201 (Number of visit occurrence records, by visit_concept_id) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0248 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 201 (0.028625 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 202 (Number of persons by visit occurrence start month, by visit_concept_id) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.082 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 202 (0.084928 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 203 (Number of distinct visit occurrence concepts per person) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0509 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 203 (0.053834 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 204 (Number of persons with at least one visit occurrence, by visit_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:06	[Main thread]	ERROR	Achilles	3	Analysis 204 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 431 An error report has been created at  output/achillesError_204.txt 
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 206 (Distribution of age by visit_concept_id) -- START
+2025-08-16 21:59:06	[Main thread]	ERROR	Achilles	3	Analysis 206 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 726 An error report has been created at  output/achillesError_206.txt 
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 207 (Number of visit records with invalid person_id) -- START
+2025-08-16 21:59:06	[Main thread]	ERROR	Achilles	3	Analysis 207 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 389 An error report has been created at  output/achillesError_207.txt 
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 209 (Number of visit records with invalid care_site_id) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0204 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 209 (0.023432 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 210 (Number of visit_occurrence records outside a valid observation period) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0218 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 210 (0.024614 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 212 (Number of persons with at least one visit occurrence, by calendar year by gender by age decile) -- START
+2025-08-16 21:59:06	[Main thread]	ERROR	Achilles	3	Analysis 212 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 414 An error report has been created at  output/achillesError_212.txt 
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 213 (Distribution of length of stay by visit_concept_id) -- START
+2025-08-16 21:59:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0579 secs
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 213 (0.060843 secs)
+2025-08-16 21:59:06	[Main thread]	INFO	Achilles	achilles	Analysis 220 (Number of visit occurrence records by visit occurrence start month) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0386 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 220 (0.041466 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 221 (Number of persons by visit start year) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0593 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 221 (0.062975 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 225 (Number of visit_occurrence records by visit_source_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0332 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 225 (0.037259 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 226 (Number of records by domain by visit_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0238 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 226 (0.026645 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 300 (Number of providers) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0165 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 300 (0.019498 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 301 (Number of providers by specialty concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0166 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 301 (0.019851 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 303 (Number of providers records by specialty_concept_id and visit_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0159 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 303 (0.018668 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 325 (Number of provider records by specialty_source_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0164 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 325 (0.019404 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 400 (Number of persons with at least one condition occurrence, by condition_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 400 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 467 An error report has been created at  output/achillesError_400.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 401 (Number of condition occurrence records, by condition_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 401 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 458 An error report has been created at  output/achillesError_401.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 402 (Number of persons by condition occurrence start month, by condition_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 402 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 389 An error report has been created at  output/achillesError_402.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 403 (Number of distinct condition occurrence concepts per person) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 403 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 295 An error report has been created at  output/achillesError_403.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 404 (Number of persons with at least one condition occurrence, by condition_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 404 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 519 An error report has been created at  output/achillesError_404.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 405 (Number of condition occurrence records, by condition_concept_id by condition_type_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 405 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 482 An error report has been created at  output/achillesError_405.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 406 (Distribution of age by condition_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 406 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 456 An error report has been created at  output/achillesError_406.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 414 (Number of condition occurrence records, by condition_status_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 414 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 454 An error report has been created at  output/achillesError_414.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 415 (Number of condition occurrence records, by condition_type_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 415 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 452 An error report has been created at  output/achillesError_415.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 416 (Number of condition occurrence records, by condition_status_concept_id, condition_type_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 416 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 480 An error report has been created at  output/achillesError_416.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 420 (Number of condition occurrence records by condition occurrence start month) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 420 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 341 An error report has been created at  output/achillesError_420.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 425 (Number of condition_occurrence records by condition_source_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 425 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 454 An error report has been created at  output/achillesError_425.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 500 (Number of persons with death, by cause_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0147 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 500 (0.017525 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 501 (Number of records of death, by cause_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0147 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 501 (0.017580 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 502 (Number of persons by death month) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0163 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 502 (0.019231 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 504 (Number of persons with a death, by calendar year by gender by age decile) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 504 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 370 An error report has been created at  output/achillesError_504.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 505 (Number of death records, by death_type_concept_id) -- START
+2025-08-16 21:59:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0148 secs
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 505 (0.017744 secs)
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 506 (Distribution of age at death by gender) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 506 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 581 An error report has been created at  output/achillesError_506.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 511 (Distribution of time from death to last condition) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 511 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 1313 An error report has been created at  output/achillesError_511.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 512 (Distribution of time from death to last drug) -- START
+2025-08-16 21:59:07	[Main thread]	ERROR	Achilles	3	Analysis 512 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 388 An error report has been created at  output/achillesError_512.txt 
+2025-08-16 21:59:07	[Main thread]	INFO	Achilles	achilles	Analysis 513 (Distribution of time from death to last visit) -- START
+2025-08-16 21:59:08	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0461 secs
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 513 (0.051008 secs)
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 514 (Distribution of time from death to last procedure) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 514 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 385 An error report has been created at  output/achillesError_514.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 515 (Distribution of time from death to last observation) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 515 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 373 An error report has been created at  output/achillesError_515.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 525 (Number of death records by cause_source_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0233 secs
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 525 (0.030083 secs)
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 600 (Number of persons with at least one procedure occurrence, by procedure_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 600 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 467 An error report has been created at  output/achillesError_600.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 601 (Number of procedure occurrence records, by procedure_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 601 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 458 An error report has been created at  output/achillesError_601.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 602 (Number of persons by procedure occurrence start month, by procedure_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 602 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 377 An error report has been created at  output/achillesError_602.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 603 (Number of distinct procedure occurrence concepts per person) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 603 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 269 An error report has been created at  output/achillesError_603.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 604 (Number of persons with at least one procedure occurrence, by procedure_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 604 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 507 An error report has been created at  output/achillesError_604.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 605 (Number of procedure occurrence records, by procedure_concept_id by procedure_type_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 605 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 482 An error report has been created at  output/achillesError_605.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 606 (Distribution of age by procedure_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 606 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 450 An error report has been created at  output/achillesError_606.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 620 (Number of procedure occurrence records  by procedure occurrence start month) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 620 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 328 An error report has been created at  output/achillesError_620.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 625 (Number of procedure_occurrence records by procedure_source_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 625 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 454 An error report has been created at  output/achillesError_625.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 630 (Number of procedure_occurrence records inside a valid observation period) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 630 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 392 An error report has been created at  output/achillesError_630.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 691 (Percentage of total persons that have at least x procedures) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 691 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 652 An error report has been created at  output/achillesError_691.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 700 (Number of persons with at least one drug exposure, by drug_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 700 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 455 An error report has been created at  output/achillesError_700.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 701 (Number of drug exposure records, by drug_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 701 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 446 An error report has been created at  output/achillesError_701.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 702 (Number of persons by drug exposure start month, by drug_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 702 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 385 An error report has been created at  output/achillesError_702.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 703 (Number of distinct drug exposure concepts per person) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 703 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 257 An error report has been created at  output/achillesError_703.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 704 (Number of persons with at least one drug exposure, by drug_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 704 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 515 An error report has been created at  output/achillesError_704.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 705 (Number of drug exposure records, by drug_concept_id by drug_type_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 705 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 465 An error report has been created at  output/achillesError_705.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 706 (Distribution of age by drug_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 706 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 433 An error report has been created at  output/achillesError_706.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 715 (Distribution of days_supply by drug_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 715 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 283 An error report has been created at  output/achillesError_715.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 716 (Distribution of refills by drug_concept_id) -- START
+2025-08-16 21:59:08	[Main thread]	ERROR	Achilles	3	Analysis 716 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 279 An error report has been created at  output/achillesError_716.txt 
+2025-08-16 21:59:08	[Main thread]	INFO	Achilles	achilles	Analysis 717 (Distribution of quantity by drug_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 717 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 297 An error report has been created at  output/achillesError_717.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 720 (Number of drug exposure records  by drug exposure start month) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 720 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 342 An error report has been created at  output/achillesError_720.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 725 (Number of drug_exposure records by drug_source_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 725 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 442 An error report has been created at  output/achillesError_725.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 791 (Percentage of total persons that have at least x drug exposures) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 791 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 623 An error report has been created at  output/achillesError_791.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 800 (Number of persons with at least one observation occurrence, by observation_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 800 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 456 An error report has been created at  output/achillesError_800.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 801 (Number of observation occurrence records, by observation_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 801 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 447 An error report has been created at  output/achillesError_801.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 802 (Number of persons by observation occurrence start month, by observation_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 802 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 368 An error report has been created at  output/achillesError_802.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 803 (Number of distinct observation occurrence concepts per person) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 803 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 259 An error report has been created at  output/achillesError_803.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 804 (Number of persons with at least one observation occurrence, by observation_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 804 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 498 An error report has been created at  output/achillesError_804.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 805 (Number of observation occurrence records, by observation_concept_id by observation_type_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 805 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 472 An error report has been created at  output/achillesError_805.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 806 (Distribution of age by observation_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 806 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 444 An error report has been created at  output/achillesError_806.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 807 (Number of observation occurrence records, by observation_concept_id and unit_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 807 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 460 An error report has been created at  output/achillesError_807.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 814 (Number of observation records with no value (numeric, string, or concept)) -- START
+2025-08-16 21:59:09	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0216 secs
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 814 (0.024574 secs)
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 815 (Distribution of numeric values, by observation_concept_id and unit_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 815 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 569 An error report has been created at  output/achillesError_815.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 820 (Number of observation records  by observation start month) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 820 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 319 An error report has been created at  output/achillesError_820.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 822 (Number of observation records, by observation_concept_id and value_as_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 822 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 454 An error report has been created at  output/achillesError_822.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 823 (Number of observation records, by observation_concept_id and qualifier_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 823 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 455 An error report has been created at  output/achillesError_823.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 825 (Number of observation records by observation_source_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 825 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 444 An error report has been created at  output/achillesError_825.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 826 (Number of observation records by value_as_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 826 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 434 An error report has been created at  output/achillesError_826.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 827 (Number of observation records by unit_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 827 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 430 An error report has been created at  output/achillesError_827.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 891 (Percentage of total persons that have at least x observations) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 891 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 630 An error report has been created at  output/achillesError_891.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 900 (Number of persons with at least one drug era, by drug_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 900 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 450 An error report has been created at  output/achillesError_900.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 901 (Number of drug era records, by drug_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 901 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 441 An error report has been created at  output/achillesError_901.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 902 (Number of persons by drug era start month, by drug_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 902 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 370 An error report has been created at  output/achillesError_902.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 903 (Number of distinct drug era concepts per person) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 903 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 251 An error report has been created at  output/achillesError_903.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 904 (Number of persons with at least one drug era, by drug_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 904 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 500 An error report has been created at  output/achillesError_904.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 906 (Distribution of age by drug_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 906 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 423 An error report has been created at  output/achillesError_906.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 907 (Distribution of drug era length, by drug_concept_id) -- START
+2025-08-16 21:59:09	[Main thread]	ERROR	Achilles	3	Analysis 907 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 340 An error report has been created at  output/achillesError_907.txt 
+2025-08-16 21:59:09	[Main thread]	INFO	Achilles	achilles	Analysis 920 (Number of drug era records by drug era start month) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 920 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 327 An error report has been created at  output/achillesError_920.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1000 (Number of persons with at least one condition era, by condition_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1000 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 462 An error report has been created at  output/achillesError_1000.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1001 (Number of condition era records, by condition_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1001 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 453 An error report has been created at  output/achillesError_1001.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1002 (Number of persons by condition era start month, by condition_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1002 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 391 An error report has been created at  output/achillesError_1002.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1003 (Number of distinct condition era concepts per person) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1003 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 263 An error report has been created at  output/achillesError_1003.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1004 (Number of persons with at least one condition era, by condition_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1004 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 521 An error report has been created at  output/achillesError_1004.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1006 (Distribution of age by condition_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1006 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 454 An error report has been created at  output/achillesError_1006.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1007 (Distribution of condition era length, by condition_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1007 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 361 An error report has been created at  output/achillesError_1007.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1020 (Number of condition era records by condition era start month) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1020 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 343 An error report has been created at  output/achillesError_1020.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1100 (Number of persons by location 3-digit zip) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0151 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1100 (0.018203 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1101 (Number of persons by location state) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0146 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1101 (0.017608 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1102 (Number of care sites by location 3-digit zip) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.02 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1102 (0.023275 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1103 (Number of care sites by location state) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0144 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1103 (0.017448 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1200 (Number of persons by place of service) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.014 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1200 (0.017150 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1201 (Number of visits by place of service) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0161 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1201 (0.019207 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1202 (Number of care sites by place of service) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0136 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1202 (0.016513 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1203 (Number of visits by place of service discharge type) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0162 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1203 (0.019132 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1300 (Number of persons with at least one visit detail, by visit_detail_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0415 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1300 (0.044473 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1301 (Number of visit detail records, by visit_detail_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.033 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1301 (0.036976 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1302 (Number of persons by visit detail start month, by visit_detail_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0674 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1302 (0.070551 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1303 (Number of distinct visit detail concepts per person) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0602 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1303 (0.063053 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1304 (Number of persons with at least one visit detail, by visit_detail_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1304 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 449 An error report has been created at  output/achillesError_1304.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1306 (Distribution of age by visit_detail_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1306 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 785 An error report has been created at  output/achillesError_1306.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1312 (Number of persons with at least one visit detail, by calendar year by gender by age decile) -- START
+2025-08-16 21:59:10	[Main thread]	ERROR	Achilles	3	Analysis 1312 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: character varying = bigint   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 409 An error report has been created at  output/achillesError_1312.txt 
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1313 (Distribution of length of stay by visit_detail_concept_id) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.056 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1313 (0.059063 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1320 (Number of visit detail records by visit detail start month) -- START
+2025-08-16 21:59:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0366 secs
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1320 (0.041073 secs)
+2025-08-16 21:59:10	[Main thread]	INFO	Achilles	achilles	Analysis 1321 (Number of persons by visit start year) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0623 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1321 (0.066833 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1325 (Number of visit_detail records by visit_detail_source_concept_id) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0365 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1325 (0.040980 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1326 (Number of records by domain by visit_detail_concept_id) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0339 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1326 (0.037258 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1406 (Length of payer plan (days) of first payer plan period by gender) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0497 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1406 (0.052666 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1407 (Length of payer plan (days) of first payer plan period by age decile) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0514 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1407 (0.054551 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1408 (Number of persons by length of payer plan period, in 30d increments) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0255 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1408 (0.028553 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1409 (Number of persons with continuous payer plan in each year) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.172 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1409 (0.175376 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1410 (Number of persons with continuous payer plan in each month) -- START
+2025-08-16 21:59:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.545 secs
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1410 (0.548480 secs)
+2025-08-16 21:59:11	[Main thread]	INFO	Achilles	achilles	Analysis 1411 (Number of persons by payer plan period start month) -- START
+2025-08-16 21:59:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0588 secs
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1411 (0.061702 secs)
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1412 (Number of persons by payer plan period end month) -- START
+2025-08-16 21:59:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.08 secs
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1412 (0.082841 secs)
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1413 (Number of persons by number of payer plan periods) -- START
+2025-08-16 21:59:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0259 secs
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1413 (0.029395 secs)
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1425 (Number of payer_plan_period records by payer_source_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0203 secs
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1425 (0.023443 secs)
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1800 (Number of persons with at least one measurement occurrence, by measurement_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1800 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 458 An error report has been created at  output/achillesError_1800.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1801 (Number of measurement occurrence records, by measurement_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1801 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 449 An error report has been created at  output/achillesError_1801.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1802 (Number of persons by measurement occurrence start month, by measurement_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1802 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 369 An error report has been created at  output/achillesError_1802.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1803 (Number of distinct mesurement occurrence concepts per person) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1803 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 260 An error report has been created at  output/achillesError_1803.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1804 (Number of persons with at least one mesurement  occurrence, by measurement_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1804 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 499 An error report has been created at  output/achillesError_1804.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1805 (Number of measurement occurrence records, by measurement_concept_id by measurement_type_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1805 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 478 An error report has been created at  output/achillesError_1805.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1806 (Distribution of age by measurement_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1806 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 445 An error report has been created at  output/achillesError_1806.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1807 (Number of measurement occurrence records, by measurement_concept_id and unit_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1807 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 462 An error report has been created at  output/achillesError_1807.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1811 (Number of measurement records with a valid value (with a mapped, non-null value_as_number)) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1811 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 393 An error report has been created at  output/achillesError_1811.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1814 (Number of measurement records with no value (numeric, string, or concept)) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1814 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 393 An error report has been created at  output/achillesError_1814.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1815 (Distribution of numeric values, by measurement_concept_id and unit_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1815 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 499 An error report has been created at  output/achillesError_1815.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1816 (Distribution of low range, by measurement_concept_id and unit_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1816 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 566 An error report has been created at  output/achillesError_1816.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1817 (Distribution of high range, by measurement_concept_id and unit_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1817 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 561 An error report has been created at  output/achillesError_1817.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1818 (Number of measurement records below/within/above normal range, by measurement_concept_id and unit_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1818 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 526 An error report has been created at  output/achillesError_1818.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1819 (Number of measurement records, by measurement_concept_id, with a valid value (with a mapped, non-null value_as_number)) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1819 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 413 An error report has been created at  output/achillesError_1819.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1820 (Number of measurement records  by measurement start month) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1820 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 320 An error report has been created at  output/achillesError_1820.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1821 (Number of measurement records with no numeric value) -- START
+2025-08-16 21:59:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.061 secs
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 1821 (0.065162 secs)
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1822 (Number of measurement records, by measurement_concept_id and value_as_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1822 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 456 An error report has been created at  output/achillesError_1822.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1823 (Number of measurement records, by measurement_concept_id and operator_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1823 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 469 An error report has been created at  output/achillesError_1823.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1825 (Number of measurement records by measurement_source_concept_id) -- START
+2025-08-16 21:59:12	[Main thread]	ERROR	Achilles	3	Analysis 1825 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 446 An error report has been created at  output/achillesError_1825.txt 
+2025-08-16 21:59:12	[Main thread]	INFO	Achilles	achilles	Analysis 1826 (Number of measurement records by value_as_concept_id) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 1826 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 436 An error report has been created at  output/achillesError_1826.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 1827 (Number of measurement records by unit_concept_id) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 1827 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 432 An error report has been created at  output/achillesError_1827.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 1891 (Percentage of total persons that have at least x measurements) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 1891 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 635 An error report has been created at  output/achillesError_1891.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 1900 (Source values mapped to concept_id 0 by table, by column, by source_value) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 1900 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: UNION types text and uuid cannot be matched   Position: 3064 An error report has been created at  output/achillesError_1900.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2000 (Number of patients with at least 1 Dx and 1 Rx) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2000 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 533 An error report has been created at  output/achillesError_2000.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2001 (Number of patients with at least 1 Dx and 1 Proc) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2001 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 532 An error report has been created at  output/achillesError_2001.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2002 (Number of patients with at least 1 Meas, 1 Dx and 1 Rx) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2002 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 519 An error report has been created at  output/achillesError_2002.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2003 (Number of patients with at least 1 Visit) -- START
+2025-08-16 21:59:13	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0698 secs
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 2003 (0.073318 secs)
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2004 (Number of distinct patients that overlap between specific domains) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2004 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: INTERSECT types character varying and bigint cannot be matched   Position: 2918 An error report has been created at  output/achillesError_2004.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2100 (Number of persons with at least one device exposure, by device_concept_id) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2100 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 461 An error report has been created at  output/achillesError_2100.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2101 (Number of device exposure records, by device_concept_id) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2101 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 452 An error report has been created at  output/achillesError_2101.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2102 (Number of persons by device records  start month, by device_concept_id) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2102 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 394 An error report has been created at  output/achillesError_2102.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2104 (Number of persons with at least one device exposure, by device_concept_id by calendar year by gender by age decile) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2104 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 524 An error report has been created at  output/achillesError_2104.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2105 (Number of device exposure records, by device_concept_id by device_type_concept_id) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2105 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 473 An error report has been created at  output/achillesError_2105.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2106 (Distribution of age by device_concept_id) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2106 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 457 An error report has been created at  output/achillesError_2106.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2120 (Number of device_exposure records by device_exposure start month) -- START
+2025-08-16 21:59:13	[Main thread]	ERROR	Achilles	3	Analysis 2120 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 349 An error report has been created at  output/achillesError_2120.txt 
+2025-08-16 21:59:13	[Main thread]	INFO	Achilles	achilles	Analysis 2125 (Number of device_exposure records by device_source_concept_id) -- START
+2025-08-16 21:59:14	[Main thread]	ERROR	Achilles	3	Analysis 2125 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 448 An error report has been created at  output/achillesError_2125.txt 
+2025-08-16 21:59:14	[Main thread]	INFO	Achilles	achilles	Analysis 2191 (Percentage of total persons that have at least x device exposures) -- START
+2025-08-16 21:59:14	[Main thread]	ERROR	Achilles	3	Analysis 2191 -- ERROR [1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying   Hint: No operator matches the given name and argument types. You might need to add explicit type casts.   Position: 640 An error report has been created at  output/achillesError_2191.txt 
+2025-08-16 21:59:14	[Main thread]	INFO	Achilles	achilles	Analysis 2200 (Number of persons with at least one note by  note_type_concept_id) -- START
+2025-08-16 21:59:14	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0481 secs
+2025-08-16 21:59:14	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 2200 (0.052163 secs)
+2025-08-16 21:59:14	[Main thread]	INFO	Achilles	achilles	Analysis 2201 (Number of note records, by note_type_concept_id) -- START
+2025-08-16 21:59:14	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0348 secs
+2025-08-16 21:59:14	[Main thread]	INFO	Achilles	achilles	[Main Analysis] [COMPLETE] 2201 (0.038213 secs)
+2025-08-16 21:59:21	[Main thread]	INFO	Achilles	achilles	Merging scratch Achilles tables
+2025-08-16 21:59:21	[Main thread]	ERROR	Achilles	3	Merging scratch Achilles tables [ERROR] ([1m[33mError[39m in `.createErrorReport()`:[22m [33m![39m Error executing SQL: org.postgresql.util.PSQLException: ERROR: relation "s_tmpach_11" does not exist   Position: 4184 An error report has been created at  /export/data0/chinaemerem/prac_dbt_synthea/errorReportSql.txt )
+2025-08-16 21:59:21	[Main thread]	INFO	Achilles	achilles	Done. Achilles results can now be found in schema results
+2025-08-16 21:59:21	[Main thread]	INFO	Achilles	achilles	Dropping scratch Achilles tables from schema #
+2025-08-16 21:59:27	[Main thread]	TRACE	Achilles	dropAllScratchTables	Initiating cluster consisting only of main thread
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00777 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0114 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.007 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0077 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00775 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00762 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00756 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0129 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00865 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0077 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00723 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00771 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00758 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00862 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00743 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00841 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00775 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00717 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00721 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00781 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00836 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00729 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0075 secs
+2025-08-16 21:59:27	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00738 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00769 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0123 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0119 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00752 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00758 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00722 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00739 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00743 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00775 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00736 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00753 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00957 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00758 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0113 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0076 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00828 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0083 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00842 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00804 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00781 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00736 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00735 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00814 secs
+2025-08-16 21:59:28	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00938 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00831 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00905 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00785 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00744 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00849 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00843 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00731 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00877 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00894 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.013 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00737 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00769 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00936 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00987 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00848 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00723 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00859 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0074 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00725 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00736 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00735 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0074 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00743 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00744 secs
+2025-08-16 21:59:29	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00749 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0074 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.016 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00772 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.014 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00722 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00722 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0074 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00766 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00808 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00837 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00717 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00746 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0074 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00746 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0104 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00737 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00753 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0102 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00747 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00916 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0118 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00707 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00704 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00692 secs
+2025-08-16 21:59:30	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00696 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00693 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0106 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00699 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00703 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00709 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0106 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00695 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00797 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00694 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00712 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00702 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00692 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0117 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00711 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00706 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00703 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00697 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00716 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00709 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00696 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00709 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.007 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00711 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00712 secs
+2025-08-16 21:59:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00925 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00848 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0146 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0114 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00904 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0184 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0105 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00801 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00752 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0099 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00859 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00842 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0119 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00969 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00788 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00813 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00973 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0123 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0124 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00918 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00929 secs
+2025-08-16 21:59:32	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00898 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0146 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0111 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00903 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00739 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00804 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00854 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00825 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00885 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00877 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00802 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00794 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0147 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00852 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00985 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00723 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00825 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00716 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0112 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00723 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00736 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00728 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00717 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00709 secs
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00724 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00731 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.014 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00704 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00698 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00698 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00687 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0102 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00757 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00719 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0113 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0175 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0134 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00731 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0079 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00735 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00724 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00839 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00734 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00724 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00719 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0132 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00833 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00718 secs
+2025-08-16 21:59:34	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0128 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.012 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00837 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0131 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0119 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00748 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00732 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00732 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00728 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00722 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00737 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00728 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0073 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00728 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0116 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00893 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0087 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00878 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00874 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00848 secs
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00876 secs
+2025-08-16 21:59:35	[Main thread]	INFO	Achilles	achilles	Temporary Achilles tables removed from schema #
+2025-08-16 21:59:36	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2025-08-16 21:59:36	[Main thread]	FATAL	DatabaseConnector	.createErrorReport	Error executing SQL: org.postgresql.util.PSQLException: ERROR: relation "results.achilles_results" does not exist An error report has been created at  /export/data0/chinaemerem/prac_dbt_synthea/errorReportSql.txt

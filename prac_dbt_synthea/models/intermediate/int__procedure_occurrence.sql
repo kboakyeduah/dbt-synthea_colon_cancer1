@@ -28,4 +28,4 @@ INNER JOIN {{ ref( 'int__source_to_source_vocab_map') }} AS srctosrcvm
         pr.procedure_code = srctosrcvm.source_code
         AND srctosrcvm.source_vocabulary_id = 'SNOMED'
 INNER JOIN {{ ref( 'int__person') }} AS p
-    ON pr.patient_id = p.person_source_value
+    ON pr.patient_id = p.person_source_value::UUID

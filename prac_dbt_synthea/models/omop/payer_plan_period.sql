@@ -24,4 +24,4 @@ INNER JOIN {{ ref ('stg_synthea__payer_transitions') }} AS pt
 INNER JOIN {{ ref ('stg_synthea__patients') }} AS pat
     ON pt.patient_id = pat.patient_id
 INNER JOIN {{ ref('person') }} AS per
-    ON pat.patient_id = per.person_source_value
+    ON pat.patient_id = per.person_source_value::UUID

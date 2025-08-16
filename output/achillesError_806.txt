@@ -1,0 +1,59 @@
+DBMS:
+postgresql
+
+Error:
+org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 444
+
+SQL:
+--HINT DISTRIBUTE_ON_KEY(subject_id)
+CREATE TEMP TABLE rawData_806
+AS
+SELECT
+o.observation_concept_id AS subject_id,
+	p.gender_concept_id,
+	o.observation_start_year - p.year_of_birth AS count_value
+FROM
+prac_cdm.person p
+JOIN (
+	SELECT 
+		o.person_id,
+		o.observation_concept_id,
+		MIN(EXTRACT(YEAR FROM o.observation_date)) AS observation_start_year
+	FROM 
+		prac_cdm.observation o
+	JOIN 
+		prac_cdm.observation_period op 
+	ON 
+		o.person_id = op.person_id
+	AND 
+		o.observation_date >= op.observation_period_start_date
+	AND 
+		o.observation_date <= op.observation_period_end_date
+	GROUP BY 
+		o.person_id,
+		o.observation_concept_id
+	) o
+ON 
+	p.person_id = o.person_id
+
+
+R version:
+R version 4.5.1 (2025-06-13)
+
+Platform:
+x86_64-suse-linux-gnu
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- Achilles (1.7.2)
+- DatabaseConnector (6.4.0)

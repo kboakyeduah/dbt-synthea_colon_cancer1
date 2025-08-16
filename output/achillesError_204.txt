@@ -1,0 +1,68 @@
+DBMS:
+postgresql
+
+Error:
+org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 431
+
+SQL:
+--HINT DISTRIBUTE_ON_KEY(stratum_1)
+CREATE TEMP TABLE s_tmpach_204
+AS
+WITH rawData  AS (
+SELECT 
+	vo.visit_concept_id AS stratum_1,
+	EXTRACT(YEAR FROM vo.visit_start_date) AS stratum_2,
+	p.gender_concept_id AS stratum_3,
+	FLOOR((EXTRACT(YEAR FROM vo.visit_start_date) - p.year_of_birth) / 10) AS stratum_4,
+	COUNT(DISTINCT p.person_id) AS count_value
+FROM 
+	prac_cdm.person p
+JOIN 
+	prac_cdm.visit_occurrence vo 
+ON 
+	p.person_id = vo.person_id
+JOIN 
+	prac_cdm.observation_period op 
+ON 
+	vo.person_id = op.person_id
+AND 
+	vo.visit_start_date >= op.observation_period_start_date
+AND 
+	vo.visit_start_date <= op.observation_period_end_date
+GROUP BY 
+	vo.visit_concept_id,
+	EXTRACT(YEAR FROM vo.visit_start_date),
+	p.gender_concept_id,
+	FLOOR((EXTRACT(YEAR FROM vo.visit_start_date) - p.year_of_birth) / 10)
+)
+ SELECT
+204 AS analysis_id,
+	CAST(stratum_1 AS VARCHAR(255)) AS stratum_1,
+	CAST(stratum_2 as varchar(255)) AS stratum_2,
+	CAST(stratum_3 as varchar(255)) AS stratum_3,
+	CAST(stratum_4 as varchar(255)) AS stratum_4,
+	CAST(NULL AS VARCHAR(255)) AS stratum_5,
+	count_value
+FROM
+rawData
+
+R version:
+R version 4.5.1 (2025-06-13)
+
+Platform:
+x86_64-suse-linux-gnu
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- Achilles (1.7.2)
+- DatabaseConnector (6.4.0)

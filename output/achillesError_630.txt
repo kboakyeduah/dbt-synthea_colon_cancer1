@@ -1,0 +1,49 @@
+DBMS:
+postgresql
+
+Error:
+org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 392
+
+SQL:
+CREATE TEMP TABLE s_tmpach_630
+AS
+SELECT
+630 AS analysis_id,
+	CAST(NULL AS VARCHAR(255)) AS stratum_1,
+	CAST(NULL AS VARCHAR(255)) AS stratum_2,
+	CAST(NULL AS VARCHAR(255)) AS stratum_3,
+	CAST(NULL AS VARCHAR(255)) AS stratum_4,
+	CAST(NULL AS VARCHAR(255)) AS stratum_5,
+	COUNT(*) AS count_value
+FROM
+prac_cdm.procedure_occurrence po
+JOIN 
+	prac_cdm.observation_period op 
+ON 
+	po.person_id = op.person_id
+AND 
+	po.procedure_date >= op.observation_period_start_date
+AND 
+	po.procedure_date <= op.observation_period_end_date
+
+
+R version:
+R version 4.5.1 (2025-06-13)
+
+Platform:
+x86_64-suse-linux-gnu
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- Achilles (1.7.2)
+- DatabaseConnector (6.4.0)

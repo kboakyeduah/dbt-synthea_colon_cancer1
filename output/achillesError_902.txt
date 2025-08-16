@@ -1,0 +1,60 @@
+DBMS:
+postgresql
+
+Error:
+org.postgresql.util.PSQLException: ERROR: operator does not exist: bigint = character varying
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 370
+
+SQL:
+--HINT DISTRIBUTE_ON_KEY(stratum_1)
+CREATE TEMP TABLE s_tmpach_902
+AS
+WITH rawData  AS (
+SELECT 
+	de.drug_concept_id AS stratum_1,
+	EXTRACT(YEAR FROM de.drug_era_start_date) * 100 + EXTRACT(MONTH FROM de.drug_era_start_date) AS stratum_2,
+	COUNT(DISTINCT de.person_id) AS count_value
+FROM 
+	prac_cdm.drug_era de
+JOIN 
+	prac_cdm.observation_period op 
+ON 
+	de.person_id = op.person_id
+AND 
+	de.drug_era_start_date >= op.observation_period_start_date
+AND 
+	de.drug_era_start_date <= op.observation_period_end_date
+GROUP BY 
+	de.drug_concept_id,
+	EXTRACT(YEAR FROM de.drug_era_start_date) * 100 + EXTRACT(MONTH FROM de.drug_era_start_date)
+)
+ SELECT
+902 AS analysis_id,
+  CAST(stratum_1 AS VARCHAR(255)) AS stratum_1,
+  CAST(stratum_2 AS VARCHAR(255)) AS stratum_2,
+  CAST(NULL AS VARCHAR(255)) AS stratum_3,
+  CAST(NULL AS VARCHAR(255)) AS stratum_4,
+  CAST(NULL AS VARCHAR(255)) AS stratum_5,
+  count_value
+FROM
+rawData
+
+R version:
+R version 4.5.1 (2025-06-13)
+
+Platform:
+x86_64-suse-linux-gnu
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- Achilles (1.7.2)
+- DatabaseConnector (6.4.0)

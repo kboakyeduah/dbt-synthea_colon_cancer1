@@ -38,6 +38,6 @@ INNER JOIN {{ ref ('int__source_to_source_vocab_map') }} AS srctosrcvm
         i.immunization_code = srctosrcvm.source_code
         AND srctosrcvm.source_vocabulary_id = 'CVX'
 INNER JOIN {{ ref ('int__person') }} AS p
-    ON i.patient_id = p.person_source_value
+    ON i.patient_id = p.person_source_value::UUID
 LEFT JOIN {{ ref ('int__visit_detail') }} AS vd
     ON i.encounter_id = vd.encounter_id::UUID
