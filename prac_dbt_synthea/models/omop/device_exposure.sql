@@ -1,23 +1,23 @@
 SELECT
-    row_number() OVER (ORDER BY p.person_id) AS device_exposure_id
-    , p.person_id
-    , srctostdvm.target_concept_id AS device_concept_id
-    , d.device_start_date AS device_exposure_start_date
-    , d.device_start_datetime AS device_exposure_start_datetime
-    , d.device_stop_date AS device_exposure_end_date
-    , d.device_stop_datetime AS device_exposure_end_datetime
-    , 32827 AS device_type_concept_id
-    , d.udi AS unique_device_id
-    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }} AS production_id
-    , {{ dbt.cast("null", api.Column.translate_type("integer")) }} AS quantity
-    , vd.provider_id
-    , vd.visit_occurrence_id
-    , vd.visit_detail_id
-    , d.device_code AS device_source_value
-    , srctosrcvm.source_concept_id AS device_source_concept_id
-    , {{ dbt.cast("null", api.Column.translate_type("integer")) }} AS unit_concept_id
-    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }} AS unit_source_value
-    , {{ dbt.cast("null", api.Column.translate_type("integer")) }} AS unit_source_concept_id
+    row_number() OVER (ORDER BY p.person_id)::integer AS device_exposure_id
+    , p.person_id::integer
+    , srctostdvm.target_concept_id::integer AS device_concept_id
+    , d.device_start_date::date AS device_exposure_start_date
+    , d.device_start_datetime::timestamp AS device_exposure_start_datetime
+    , d.device_stop_date::date AS device_exposure_end_date
+    , d.device_stop_datetime::timestamp AS device_exposure_end_datetime
+    , 32827::integer AS device_type_concept_id
+    , d.udi::varchar(255) AS unique_device_id
+    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }}::varchar(255) AS production_id
+    , {{ dbt.cast("null", api.Column.translate_type("integer")) }}::integer AS quantity
+    , vd.provider_id::integer
+    , vd.visit_occurrence_id::integer
+    , vd.visit_detail_id::integer
+    , d.device_code::varchar(50) AS device_source_value
+    , srctosrcvm.source_concept_id::integer AS device_source_concept_id
+    , {{ dbt.cast("null", api.Column.translate_type("integer")) }}::integer AS unit_concept_id
+    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }}::varchar(50) AS unit_source_value
+    , {{ dbt.cast("null", api.Column.translate_type("integer")) }}::integer AS unit_source_concept_id
 FROM {{ ref('stg_synthea__devices') }} AS d
 INNER JOIN {{ ref ('int__source_to_standard_vocab_map') }} AS srctostdvm
     ON

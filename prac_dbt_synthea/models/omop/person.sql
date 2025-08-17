@@ -1,16 +1,16 @@
 SELECT
-    person_id
-    , gender_concept_id
-    , year_of_birth
-    , month_of_birth
-    , day_of_birth
-    , birth_datetime
-    , race_concept_id
-    , ethnicity_concept_id
-    , location_id
-    , provider_id
-    , care_site_id
-    , person_source_value
+    person_id::integer
+    , gender_concept_id::integer
+    , year_of_birth::integer
+    , month_of_birth::integer
+    , day_of_birth::integer
+    , birth_datetime::timestamp
+    , race_concept_id::integer
+    , ethnicity_concept_id::integer
+    , location_id::integer
+    , provider_id::integer
+    , care_site_id::integer
+    , person_source_value::varchar(50)
     , gender_source_value
     , gender_source_concept_id
     , race_source_value

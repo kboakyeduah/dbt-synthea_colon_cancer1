@@ -1,9 +1,9 @@
 SELECT
-    row_number() OVER (ORDER BY person_id) AS observation_period_id
-    , person_id
-    , observation_period_start_date
-    , observation_period_end_date
-    , 32882 AS period_type_concept_id
+    row_number() OVER (ORDER BY person_id)::integer AS observation_period_id
+    , person_id::integer
+    , observation_period_start_date::date
+    , observation_period_end_date::date
+    , 32882::integer AS period_type_concept_id
 FROM (
     SELECT
         person_id

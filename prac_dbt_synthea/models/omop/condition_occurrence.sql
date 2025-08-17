@@ -1,20 +1,20 @@
 SELECT
-    row_number() OVER (ORDER BY p.person_id) AS condition_occurrence_id
-    , p.person_id
-    , srctostdvm.target_concept_id AS condition_concept_id
-    , c.condition_start_date
-    , {{ dbt.cast("null", api.Column.translate_type("timestamp")) }} AS condition_start_datetime
-    , c.condition_stop_date AS condition_end_date
-    , {{ dbt.cast("null", api.Column.translate_type("timestamp")) }} AS condition_end_datetime
-    , 32827 AS condition_type_concept_id
-    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }} AS stop_reason
-    , vd.provider_id
-    , vd.visit_occurrence_id
-    , vd.visit_detail_id
-    , c.condition_code AS condition_source_value
-    , srctosrcvm.source_concept_id AS condition_source_concept_id
-    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }} AS condition_status_source_value
-    , 0 AS condition_status_concept_id
+    row_number() OVER (ORDER BY p.person_id)::integer AS condition_occurrence_id
+    , p.person_id::integer
+    , srctostdvm.target_concept_id::integer AS condition_concept_id
+    , c.condition_start_date::date
+    , {{ dbt.cast("null", api.Column.translate_type("timestamp")) }}::timestamp AS condition_start_datetime
+    , c.condition_stop_date::date AS condition_end_date
+    , {{ dbt.cast("null", api.Column.translate_type("timestamp")) }}::timestamp AS condition_end_datetime
+    , 32827::integer AS condition_type_concept_id
+    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }}::varchar(20) AS stop_reason
+    , vd.provider_id::integer
+    , vd.visit_occurrence_id::integer
+    , vd.visit_detail_id::integer
+    , c.condition_code::varchar(50) AS condition_source_value
+    , srctosrcvm.source_concept_id::integer AS condition_source_concept_id
+    , {{ dbt.cast("null", api.Column.translate_type("varchar")) }}::varchar(50) AS condition_status_source_value
+    , 0::integer AS condition_status_concept_id
 FROM {{ ref('stg_synthea__conditions') }} AS c
 INNER JOIN {{ ref ('int__source_to_standard_vocab_map') }} AS srctostdvm
     ON

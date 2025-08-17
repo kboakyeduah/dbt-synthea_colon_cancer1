@@ -5,6 +5,6 @@ WITH all_measurements AS (
 )
 
 SELECT
-    ROW_NUMBER() OVER (ORDER BY am.person_id) AS measurement_id
+    ROW_NUMBER() OVER (ORDER BY am.person_id)::integer AS measurement_id
     , am.*
 FROM all_measurements AS am

@@ -209,15 +209,15 @@ WITH ctePreDrugTarget AS (
 )
 
 SELECT
-    drug_era_id
-    , person_id
-    , drug_concept_id
-    , drug_era_start_date
-    , drug_era_end_date
-    , drug_exposure_count
+    drug_era_id::integer
+    , person_id::integer
+    , drug_concept_id::integer
+    , drug_era_start_date::date
+    , drug_era_end_date::date
+    , drug_exposure_count::integer
     , {{ dbt.datediff(
             dbt.cast("min_drug_sub_exposure_start_date", api.Column.translate_type("date")),
             dbt.cast("drug_era_end_date", api.Column.translate_type("date")), 
             "day") 
-    }} - sum_days_exposed AS gap_days
+    }} - sum_days_exposed::integer AS gap_days
 FROM cteDrugEra

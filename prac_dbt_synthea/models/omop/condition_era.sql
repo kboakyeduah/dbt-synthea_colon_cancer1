@@ -84,11 +84,11 @@ WITH cteConditionTarget AS (
 )
 
 SELECT
-    row_number() OVER (ORDER BY person_id) AS condition_era_id
-    , person_id
-    , condition_concept_id
-    , min(condition_start_date) AS condition_era_start_date
-    , {{ dbt.cast("era_end_date", api.Column.translate_type("date")) }} AS condition_era_end_date
-    , count(*) AS condition_occurrence_count
+    row_number() OVER (ORDER BY person_id)::integer AS condition_era_id
+    , person_id::integer
+    , condition_concept_id::integer
+    , min(condition_start_date)::date AS condition_era_start_date
+    , {{ dbt.cast("era_end_date", api.Column.translate_type("date")) }}::date AS condition_era_end_date
+    , count(*)::integer AS condition_occurrence_count
 FROM cteConditionEnds
 GROUP BY person_id, condition_concept_id, era_end_date
